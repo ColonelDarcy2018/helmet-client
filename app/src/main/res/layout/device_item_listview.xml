@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="新光智能头盔"
+        android:textColor="#444"
+        android:textSize="20sp" />
+
+    <TextView
+        android:padding="3dp"
+        android:id="@+id/phoneTv"
+        android:gravity="center"
+        android:layout_alignEnd="@id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2ED667"
+        android:drawablePadding="5dp"
+        android:text="已连接"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/titleTv" />
+
+    <!--        android:drawableLeft="@mipmap/phone"-->
+</RelativeLayout>

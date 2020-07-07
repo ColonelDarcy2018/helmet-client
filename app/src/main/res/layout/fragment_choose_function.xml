@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/qmui_topbar_height"
+        android:background="@color/qmui_config_color_white"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/qmui_content_spacing_horizontal"
+            android:paddingRight="@dimen/qmui_content_spacing_horizontal">
+
+            <com.qmuiteam.qmui.widget.QMUIFloatLayout
+                android:id="@+id/qmuidemo_floatlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                app:qmui_childHorizontalSpacing="20dp"
+                app:qmui_childVerticalSpacing="20dp">
+
+                <TextView
+                    android:id="@+id/sigTempView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_color_theme_3"
+                    android:padding="40dp"
+                    android:text="单人测温"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/crowdTempView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_color_theme_3"
+                    android:padding="40dp"
+                    android:text="多人测温"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/arcfaceView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_color_theme_3"
+                    android:padding="40dp"
+                    android:text="人脸识别"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/carnumView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_color_theme_3"
+                    android:padding="40dp"
+                    android:text="车牌识别"
+                    android:textSize="15dp" />
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/idcardView"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@color/app_color_theme_3"-->
+                <!--                    android:paddingLeft="33dp"-->
+                <!--                    android:paddingTop="40dp"-->
+                <!--                    android:paddingRight="33dp"-->
+                <!--                    android:paddingBottom="40dp"-->
+                <!--                    android:text="身份证识别"-->
+                <!--                    android:textSize="15dp" />-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@color/app_color_theme_3"-->
+                <!--                    android:paddingLeft="33dp"-->
+                <!--                    android:paddingTop="40dp"-->
+                <!--                    android:paddingRight="33dp"-->
+                <!--                    android:paddingBottom="40dp"-->
+                <!--                    android:text="占位之占位"-->
+                <!--                    android:visibility="invisible"-->
+                <!--                    android:textSize="15dp" />-->
+
+            </com.qmuiteam.qmui.widget.QMUIFloatLayout>
+
+
+            <!--            <com.qmuiteam.qmui.widget.QMUIFloatLayout-->
+            <!--                android:id="@+id/qmuidemo_floatlayout2"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="15dp"-->
+            <!--                android:layout_marginLeft="14dp"-->
+            <!--                android:gravity="left"-->
+            <!--                app:qmui_childHorizontalSpacing="20dp"-->
+            <!--                app:qmui_childVerticalSpacing="20dp">-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/idcardView"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@color/app_color_theme_3"-->
+            <!--                android:paddingTop="40dp"-->
+            <!--                android:paddingBottom="40dp"-->
+            <!--                android:paddingLeft="33dp"-->
+            <!--                android:paddingRight="33dp"-->
+            <!--                android:text="身份证识别"-->
+            <!--                android:textSize="15dp" />-->
+
+            <!--        </com.qmuiteam.qmui.widget.QMUIFloatLayout>-->
+
+            <!--            <RelativeLayout style="@style/button_wrapper_style">-->
+
+            <!--                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton-->
+            <!--                    android:id="@+id/sigTempBtn"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerInParent="true"-->
+            <!--                    android:clickable="true"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    android:text="              单人测温                "-->
+            <!--                    android:textColor="@color/colorPrimaryDark"-->
+            <!--                    app:qmui_borderColor="@color/colorPrimaryDark"-->
+            <!--                    app:qmui_borderWidth="10px" />-->
+
+            <!--            </RelativeLayout>-->
+
+            <!--            <RelativeLayout style="@style/button_wrapper_style">-->
+
+            <!--                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton-->
+            <!--                    android:id="@+id/crowdTempBtn"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerInParent="true"-->
+            <!--                    android:clickable="true"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    android:text="              多人测温                "-->
+            <!--                    android:textColor="@color/colorPrimaryDark"-->
+            <!--                    app:qmui_borderColor="@color/colorPrimaryDark"-->
+            <!--                    app:qmui_borderWidth="10px" />-->
+
+            <!--            </RelativeLayout>-->
+
+            <!--            <RelativeLayout style="@style/button_wrapper_style">-->
+
+            <!--                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton-->
+            <!--                    android:id="@+id/arfaceBtn"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerInParent="true"-->
+            <!--                    android:clickable="true"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    android:text="              人脸识别                "-->
+            <!--                    android:textColor="@color/colorPrimaryDark"-->
+            <!--                    app:qmui_borderColor="@color/colorPrimaryDark"-->
+            <!--                    app:qmui_borderWidth="10px" />-->
+
+            <!--            </RelativeLayout>-->
+
+            <!--            <RelativeLayout style="@style/button_wrapper_style">-->
+
+            <!--                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton-->
+            <!--                    android:id="@+id/carnumBtn"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerInParent="true"-->
+            <!--                    android:clickable="true"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    android:text="              车牌识别                "-->
+            <!--                    android:textColor="@color/colorPrimaryDark"-->
+            <!--                    app:qmui_borderColor="@color/colorPrimaryDark"-->
+            <!--                    app:qmui_borderWidth="10px" />-->
+
+            <!--            </RelativeLayout>-->
+
+            <!--            <RelativeLayout style="@style/button_wrapper_style">-->
+
+            <!--                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton-->
+            <!--                    android:id="@+id/idcardBtn"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerInParent="true"-->
+            <!--                    android:clickable="true"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    android:text="              身份证识别                "-->
+            <!--                    android:textColor="@color/colorPrimaryDark"-->
+            <!--                    app:qmui_borderColor="@color/colorPrimaryDark"-->
+            <!--                    app:qmui_borderWidth="10px" />-->
+
+            <!--            </RelativeLayout>-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

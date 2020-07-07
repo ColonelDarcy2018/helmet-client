@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:padding="15dp">
+
+    <TableRow>
+        <TextView
+            android:layout_width="120dp"
+            android:textSize="18dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:text="校正参数：" />
+
+        <EditText
+            android:id="@+id/fix"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:inputType="numberSigned|numberDecimal">
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:text="反射温度（℃）："
+            />
+
+        <EditText
+            android:id="@+id/refltmp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:inputType="numberDecimal">
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:textSize="18dp"
+            android:text="环境温度（℃）：" />
+
+        <EditText
+            android:id="@+id/airtmp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:inputType="numberDecimal">
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="120dp"
+            android:textSize="18dp"
+            android:layout_marginBottom="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:text="环境湿度：" />
+
+        <EditText
+            android:id="@+id/humi"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:inputType="numberDecimal">
+        </EditText>
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:layout_width="120dp"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="left|bottom"
+            android:text="反射率：" />
+
+        <EditText
+            android:id="@+id/emiss"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:inputType="numberDecimal">
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="120dp"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:text="校正距离："
+            android:layout_marginBottom="2dp"/>
+
+        <EditText
+            android:id="@+id/distance"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:inputType="number">
+        </EditText>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="120dp"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:text="色板选择："
+            android:layout_marginBottom="2dp"/>
+        <RadioGroup
+            android:id="@+id/paletteGroup"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="铁灰"></RadioButton>
+            <RadioButton
+                android:id="@+id/rainbow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="彩虹"></RadioButton>
+        </RadioGroup>
+    </TableRow>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnSave"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="保存设置" />
+</TableLayout>
